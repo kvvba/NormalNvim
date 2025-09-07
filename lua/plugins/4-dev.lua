@@ -324,22 +324,22 @@ return {
   --  NOTE: This plugin is disabled by default.
   --        To enable it set the next env var in your OS:
   --        OPENAI_API_KEY="my_key_here"
-  {
-    "dense-analysis/neural",
-    cmd = { "Neural" },
-    config = function()
-      require("neural").setup {
-        source = {
-          openai = {
-            api_key = vim.env.OPENAI_API_KEY,
-          },
-        },
-        ui = {
-          prompt_icon = require("base.utils").get_icon("PromptPrefix"),
-        },
-      }
-    end,
-  },
+  -- {
+  --   "dense-analysis/neural",
+  --   cmd = { "Neural" },
+  --   config = function()
+  --     require("neural").setup {
+  --       source = {
+  --         openai = {
+  --           api_key = vim.env.OPENAI_API_KEY,
+  --         },
+  --       },
+  --       ui = {
+  --         prompt_icon = require("base.utils").get_icon("PromptPrefix"),
+  --       },
+  --     }
+  --   end,
+  -- },
 
   --  copilot [github code suggestions]
   --  https://github.com/zbirenbaum/copilot.lua
