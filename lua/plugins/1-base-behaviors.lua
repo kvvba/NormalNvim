@@ -581,7 +581,7 @@ return {
     config = function(_, opts)
       local npairs = require("nvim-autopairs")
       npairs.setup(opts)
-      if not vim.g.autopairs_enabled then npairs.disable() end
+      -- if not vim.g.autopairs_enabled then npairs.disable() end
 
       local is_cmp_loaded, cmp = pcall(require, "cmp")
       if is_cmp_loaded then
