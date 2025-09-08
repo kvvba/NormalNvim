@@ -28,6 +28,13 @@ local is_android = vim.fn.isdirectory('/data') == 1 -- true if on android
 
 return {
 
+  -- gruvbox [theme]
+  --https://github.com/ellisonleao/gruvbox.nvim
+  {
+    "ellisonleao/gruvbox.nvim",
+    event = "User LoadColorSchemes",
+  },
+
   --  tokyonight [theme]
   --  https://github.com/folke/tokyonight.nvim
   {
